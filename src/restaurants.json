@@ -1,0 +1,87 @@
+{
+    "httpcode": 200,
+    "httpmessage": "success",
+    "response": [
+        {
+            "id": "1",
+            "category": "Cost Effective",
+            "restaurantList": [
+                {
+                    "id": "1",
+                    "name": "Fish City",
+                    "imageUrl": "https://i.postimg.cc/59LvwBzm/baked-salmon-in-foil-recipe.jpg",
+                    "rating": "4.5",
+                    "review": "935"
+                },
+                {
+                    "id": "2",
+                    "name": "Burgers R' Us",
+                    "imageUrl": "https://i.postimg.cc/mgXFb8xT/lunch-dinner-burgers-all-american-burger.jpg",
+                    "rating": "2",
+                    "review": "304"
+                },
+                {
+                    "id": "3",
+                    "name": "Taco Town",
+                    "imageUrl": "https://i.postimg.cc/prHm0SjJ/Easy-Chicken-Tacos-IMG-9890-760x1140.jpg",
+                    "rating": "3.5",
+                    "review": "839"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "category": "Bit Pricier",
+            "restaurantList": [
+                {
+                    "id": "1",
+                    "name": "Fancy Feast",
+                    "imageUrl": "https://i.postimg.cc/zXdfWvxj/20170327-Sundried-Tomato-Pesto-Stuffed-Chicken-Banner-1600x700-draft1-1300x569.jpg",
+                    "rating": "4.5",
+                    "review": "992"
+                },
+                {
+                    "id": "2",
+                    "name": "Steak House",
+                    "imageUrl": "https://i.postimg.cc/cLrLcWjN/Skillet-Steak-and-Asparagus-1.jpg",
+                    "rating": "5",
+                    "review": "1028"
+                },
+                {
+                    "id": "3",
+                    "name": "Delightful Cuisine",
+                    "imageUrl": "https://i.postimg.cc/26fjmZ5z/Roasted-Tomato-Pasta-Dinner-F.jpg",
+                    "rating": "4",
+                    "review": "928"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "category": "Big Spender!",
+            "restaurantList": [
+                {
+                    "id": "1",
+                    "name": "House of Steaks",
+                    "imageUrl": "https://i.postimg.cc/vTYQxw9k/pan-seared-sirloin-steak-771x600.jpg",
+                    "rating": "4.5",
+                    "review": "583"
+                },
+                {
+                    "id": "2",
+                    "name": "BBQ BBQ BBQ",
+                    "imageUrl": "https://i.postimg.cc/PrqXthd8/55190-640x428.jpg",
+                    "rating": "5",
+                    "review": "1035"
+                },
+                {
+                    "id": "3",
+                    "name": "Too Fancy",
+                    "imageUrl": "https://i.postimg.cc/L8c2B1Lz/unnamed.png",
+                    "rating": "2",
+                    "review": "12"
+                }
+            ]
+        }
+    ]
+}
