@@ -1,79 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
-import { SearchBar } from 'react-native-elements';
+import { StyleSheet, Text, View, } from 'react-native';
+import Information from './src/Information';
+import Search from './src/Search';
 
-
-    // ADD IN JSON FILE INFO
-const data = require('./src/restaurants.json').response;
-
-    // MAIN APP
+// MAIN PAGE FORMAT==============================
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Restaurant Search</Text>
-      <SearchBar
-        platform='ios'
-        placeholder="Search"/>
-      <FlatList
-        data={data}
-        renderItem={({ item }) => {
-          return (
-            <View style={styles.row}>
-              <Text style={styles.priceRange}>{item.category}</Text>
-              <FlatList
-                horizontal
-                data={item.restaurantList}
-                renderItem={({ item }) => {
-                  return (
-                    <View style={styles.restaurant}>
-                      <Image style={styles.image} source={{uri: item.imageUrl}} />
-                      <Text style={styles.name}>{item.name}</Text>
-                      <Text style={styles.info}>
-                        {item.rating} Stars, {item.review} Reviews
-                      </Text>
-                    </View>
-                  );
-                }}
-              />
-            </View>
-          );
-        }}
-      />
+      <Search />
+      <Information />
     </View>
   );
 }
 
 
+// STYLE SHEET===================================
 const styles = StyleSheet.create({
   container: {
     padding: 16,
   },
   title: {
     fontSize: 18,
-    alignSelf: 'center',
-    fontWeight: 'bold',
-  },
-  priceRange: {
-    fontSize: 24,
+    alignSelf: "center",
     fontWeight: "bold",
-  },
-  row: {
-    borderBottomWidth: 1,
-    borderBottomColor: "gray",
-  },
-  restaurant: {
-    marginVertical: 10,
-    marginRight: 20,
-  },
-  image: {
-    height: 100,
-    width: 200,
-  },
-  name: {
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  info: {
-    color: "gray",
   },
 });
