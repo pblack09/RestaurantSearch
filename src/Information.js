@@ -34,10 +34,14 @@ export default function Information() {
                         animationType='slide'
                         presentationStyle='overFullScreen'
                         visible={modalVisible}>
-                        <Text style={styles.title}>{item.name}</Text>
-                        <Button
-                          onPress={() => setModalVisible(false)}
-                          title="Close" />
+                        <Text style={styles.modalTitle}>{item.name}</Text>
+                        <Image style={styles.modalImage} source={{ uri: item.imageUrl }} />
+                        <Text style={styles.modalDescription}>Enter description here.</Text>
+                        <View style={styles.button}>
+                          <Button
+                            onPress={() => setModalVisible(false)}
+                            title="Close" />
+                        </View>
                       </Modal>
                     </TouchableOpacity>
                   );
@@ -81,5 +85,26 @@ const styles = StyleSheet.create({
   },
   info: {
     color: "gray",
+  },
+  modalTitle: {
+    fontSize: 40,
+    alignSelf: "center",
+    fontWeight: "bold",
+  },
+  modalImage: {
+    marginTop: 20,
+    height: 220,
+    width: 440,
+    resizeMode: 'cover',
+  },
+  modalDescription: {
+    fontSize: 20,
+    margin: 30,
+    alignSelf: "center",
+  },
+  button: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    margin: 30,
   },
 });
